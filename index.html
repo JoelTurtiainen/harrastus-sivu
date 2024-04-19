@@ -1,47 +1,111 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>Etusivu</title>
+<html lang="fi">
+	<head>
+		<title>Home</title>
+		<!-- Required meta tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    
-</head>
+		<!-- Bootstrap CDN & Bootstrap Icons CDN -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+	</head>
 
-<body>
-    <div class="square">
-        <p class="ModeSeven">/home/</p>
-
-    <div class="sidenav">
-        <a href="index.html">&gt Etusivu</a>
-        <a href="kuka.html">Kuka olen?</a>
-        <a href="opinto.html">Opinnot</a>
-        <a href="harrastus.html">Harrastukset</a>
-        <a href="tyokokemus.html">Työkokemus</a>
-        <a href="tyonautteet.html">Työnäytteet</a>
-        <a href="some.html">Some</a>
-    </div>
-    </div>
-
-    <div class="squareotsikko">
-        <p class="ModeSeven"> otsikko </p>
-        <h6>Etusivu</h6>
+	<body>
+		<header>
+			<!-- Navbar -->
+			<nav class="navbar navbar-expand-sm bg-dark" data-bs-theme="dark">
+				<div class="container">
+					<a class="navbar-brand" href="#">Joel</a>
+					<button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="collapsibleNavId">
+						<ul class="navbar-nav me-auto mt-2 mt-lg-0">
+							<li class="nav-item">
+								<a class="nav-link active" href="#" aria-current="page">Home<span class="visually-hidden">(current)</span></a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="kokemus.html">Kokemus</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="portfolio.html">Portfolio</a>
+							</li>
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Linkit</a>
+								<div
+									class="dropdown-menu" aria-labelledby="dropdownId">
+									<a class="dropdown-item" href="https://github.com/JoelTurtiainen"><i class="bi-github"></i> JoelTurtiainen</a> 
+									<a class="dropdown-item" href="#"><i class="bi-discord"></i> _keygen</a>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<main>
+      <!-- MARK: Showcase -->
+      <section class="bg-dark p-5 text-light bg-gradient" data-bs-theme="dark">
+        <div class="container">
+          <div class="d-sm-flex align-items-center justify-content-evenly">
+            <div>
+              <h1 class="fw-bold">Tervetuloa Sivuilleni</h1>
+              <p class="lead my-4"></p>
+              <p class="lead w-75">
+                <span class="text-warning fw-bold">Wörk in prögress</span><br>Päivittelen sivuja sitä mukaan kun saan projekteja valmiiksi.
+              </p>
+            </div>
+            <img class="img-fluid w-50 d-none d-sm-block" src="img/undraw_drink_coffee_v3au.svg" alt="" style="max-width: 30%;">
+          </div>
         </div>
+      </section>
+      <!-- MARK: Tutkinnon rakenne -->
+      <section id="rakenne" class="py-5 p-3">
+        <div class="container">
+          <div class="row align-items-center justify-content-between">
+            <div class="col-md p-sm-5">
+              <h2>Kuka olen</h2>
+              <p class="lead">
+                Olen Joel 25 -vuotias mikkeliläinen. Koulutukseltaan sähköasentaja mutta opiskelen nyt Tieto- ja viestintätekniikkaa.
+                Olen aina haaveillut ohjelmoinnista, päätin vihdoinkin hakea alalle.
+              </p>
+              <p class="lead">
+                Tärkeinä asioina pidän optimointia ja turvallisuutta.
+              </p>
+              <p>
+                Vapaa-ajan harrastuksiini kuuluu mm:
+              </p>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Ohjelmointi <span class="badge text-bg-secondary">New</span></li>
+                <li class="list-group-item">Uusien asioiden opiskelu</li>
+                <li class="list-group-item">Laitteiden huoltaminen</li>
+                <li class="list-group-item">Kavereiden auttaminen teknisissä ongelmissa</li>
+                <li class="list-group-item">Pelejen modaus, reverse-engineeraus, bugien etsiminen ja optimointi</li>
+                <li class="list-group-item">3D mallintaminen</li>
+                <li class="list-group-item">Kalastus</li>
+              </ul>
+            </div>
+            <div class="col-md">
+              <img src="img/undraw_reading_time_re_phf7.svg" class="img-fluid d-none d-sm-block" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
+      
+		</main>
 
-    <div class="square2">
-
-        <p class="ModeSeven">etusivu.txt</p>
-    
-        <br>
-        <h1>Tervetuloa sivuilleni</h1>
-        <br>
-        <p>Vasemmalta pääset navigoimaan eri sivuille</p>
-    </div>
-
-    <br>
-    <br>
-
-
-
-</body>
+		<footer>
+      <div class="logo bg-dark text-white overflow-hidden px-3" data-bs-theme="dark">
+				<div class="row">
+					<div class="col">
+						illustration: <a href="https://undraw.co/">unDraw</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- Bootstrap JavaScript Libraries -->
+		<!-- Bootstrap JavaScript CDN -->
+		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+	</body>
 </html>
